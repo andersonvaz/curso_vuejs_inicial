@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>exemplo1</title>
+  <meta charset="iso8859-1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>TESTE1</h1>
+  <p id="teste1">Texto teste1</p> 
+</div>
+<div class="container">
+  <h2>TESTE2</h2>
+  <p>Texto teste2</p> 
+</div>
+<div class="container">
+    <input type="button" onclick="btnClick()" value="teste" >
+</div>
+<script>
+    function btnClick()
+    {
+        $('.container').css('background-color', 'red');
+        $('.container > h2').css('background-color', 'blue');
+        $('.container > p:parent ').css('background-color', 'green');
+        $('p').html('funcionou!!!');
+    }
+</script>
+</body>
+</html>
